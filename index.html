@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي - الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div class="language-switcher">
+        <button id="langToggle" class="lang-btn">
+            <i class="fas fa-language"></i>
+            <span id="currentLang">AR</span>
+        </button>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#" id="navLogo">موقعي</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" id="navHome">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link" id="navAbout">من نحن</a></li>
+                <li><a href="#services" class="nav-link" id="navServices">خدماتنا</a></li>
+                <li><a href="#contact" class="nav-link" id="navContact">اتصل بنا</a></li>
+                <li><a href="login.html" class="nav-link login-btn" id="navLogin">تسجيل الدخول</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="heroTitle">مرحباً بك في موقعنا</h1>
+                <p id="heroSubtitle">نقدم لك أفضل الحلول التقنية بجودة عالية وأسعار مناسبة</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary" id="heroServicesBtn">اكتشف خدماتنا</a>
+                    <a href="#contact" class="btn btn-secondary" id="heroContactBtn">اتصل بنا</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 id="aboutTitle">من نحن</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 id="aboutSubtitle">قصتنا ورسالتنا</h3>
+                    <p id="aboutDescription">نحن فريق من المحترفين المتخصصين في تقديم حلول تقنية مبتكرة. نؤمن بأن التكنولوجيا يجب أن تكون في متناول الجميع.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-rocket"></i>
+                            <span id="aboutFeature1">سرعة في الأداء</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span id="aboutFeature2">أمان وحماية</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <span id="aboutFeature3">دعم فني 24/12</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h4>+500</h4>
+                        <p id="aboutStat1">عميل راضي</p>
+                    </div>
+                    <div class="stat">
+                        <h4>+150</h4>
+                        <p id="aboutStat2">مشروع مكتمل</p>
+                    </div>
+                    <div class="stat">
+                        <h4>+3</h4>
+                        <p id="aboutStat3">سنوات خبرة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 id="servicesTitle">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3 id="service1Title">تطوير الويب</h3>
+                    <p id="service1Desc">نقوم بتطوير مواقع ويب متكاملة بتقنيات حديثة وتصميمات responsive.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3 id="service2Title">تطبيقات الجوال</h3>
+                    <p id="service2Desc">تصميم وتطوير تطبيقات الجوال لأنظمة iOS و Android.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-palette"></i>
+                    <h3 id="service3Title">تصميم UI/UX</h3>
+                    <p id="service3Desc">تصميم واجهات مستخدم جذابة وسهلة الاستخدام.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3 id="service4Title">الحلول السحابية</h3>
+                    <p id="service4Desc">توفير حلول سحابية آمنة وقابلة للتطوير.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 id="contactTitle">اتصل بنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 id="contactPhone">الهاتف</h4>
+                            <p>+201022392915</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 id="contactEmail">البريد الإلكتروني</h4>
+                            <p>kingsoft261@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 id="contactAddress">العنوان</h4>
+                            <p id="contactLocation">الاسسكندرية، مصر</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="contactName" placeholder="اسمك الكريم" required>
+                    <input type="email" id="contactEmailInput" placeholder="بريدك الإلكتروني" required>
+                    <textarea id="contactMessage" placeholder="رسالتك" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary" id="contactSubmit">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 id="footerLogo">موقعي</h3>
+                    <p id="footerDesc">نقدم حلولاً تقنية مبتكرة تلبي احتياجاتك.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 id="footerLinks">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home" id="footerHome">الرئيسية</a></li>
+                        <li><a href="#about" id="footerAbout">من نحن</a></li>
+                        <li><a href="#services" id="footerServices">خدماتنا</a></li>
+                        <li><a href="#contact" id="footerContact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 id="footerFollow">تابعنا</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="footerCopyright">&copy; 2024 موقعي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+<script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
