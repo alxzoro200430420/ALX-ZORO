@@ -42,15 +42,19 @@ body {
     left: 20px;
 }
 
+button#langToggle {
+    margin: 0px;
+    height: 30px;
+}
 .lang-btn {
     background: rgba(255, 255, 255, 0.95);
     border: 2px solid var(--primary-color);
-    border-radius: 25px;
-    padding: 10px 15px;
+    border-radius: 30px;
+    padding: 10px 5px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     font-family: inherit;
