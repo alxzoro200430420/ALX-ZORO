@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+      <div class="home-button">
+        <a href="index.html" class="home-btn">
+            <i class="fas fa-home"></i>
+            <span id="homeText" data-i18n="home.text">الرئيسية</span>
+        </a>
+    </div>
+  <div class="language-switcher">
+        <button id="langToggle" class="lang-btn">
+            <i class="fas fa-language"></i>
+            <span id="currentLang">AR</span>
+        </button>
+    </div>
+    
+
+    <div class="container" id="container">
+
+        <div class="form-container login-container">
+            <form id="loginForm">
+                <h1 data-i18n="login.title">Login</h1>
+                <div class="input-group">
+                    <input type="text" placeholder="Username" required data-i18n-placeholder="login.username">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required data-i18n-placeholder="login.password">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="forgot-password">
+                    <a href="#" data-i18n="login.forgot">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn" data-i18n="login.button">Login</button>
+                <p data-i18n="login.social">or Login with social platforms</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="form-container register-container">
+            <form id="registerForm">
+                <h1 data-i18n="register.title">Register</h1>
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required data-i18n-placeholder="register.fullname">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required data-i18n-placeholder="register.email">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required data-i18n-placeholder="register.password">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Confirm Password" required data-i18n-placeholder="register.confirm">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <button type="submit" class="btn" data-i18n="register.button">Register</button>
+                <p data-i18n="register.social">or Register with social platforms</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="toggle-container">
+            <div class="toggle toggle-left">
+                <h1 data-i18n="toggle.welcome_back">Welcome Back!</h1>
+                <p data-i18n="toggle.login_message">Enter your account to access exclusive features</p>
+                <button class="toggle-btn" id="loginToggle" data-i18n="toggle.login_button">Login</button>
+            </div>
+            <div class="toggle toggle-right">
+                <h1 data-i18n="toggle.hello">Hello, Friend!</h1>
+                <p data-i18n="toggle.register_message">Create a new account to enjoy our services</p>
+                <button class="toggle-btn" id="registerToggle" data-i18n="toggle.register_button">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
