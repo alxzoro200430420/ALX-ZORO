@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteBase /
+
+# حماية الملفات الحساسة
+<FilesMatch "\.(sql|log|ini|conf)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# منع عرض محتويات المجلدات
+Options -Indexes
+
+# إعدادات CORS
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
+Header set Access-Control-Allow-Headers "Content-Type"
+
+# إعادة توجيه API
+RewriteRule ^api/(.*)$ api/$1 [L,QSA]
